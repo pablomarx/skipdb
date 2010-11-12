@@ -6,6 +6,7 @@ all:
 	cd libs/jfile/tests; make
 	cd libs/udb; make
 	cd libs/skipdb; make
+	cd libs/skipdb/tests; make
 	#cd libs/tagdb; make
 
 clean:
@@ -14,7 +15,9 @@ clean:
 	cd libs/jfile/tests; make clean
 	cd libs/udb; make clean
 	cd libs/skipdb; make clean
+	cd libs/skipdb/tests; make clean
 	#cd libs/tagdb; make clean
 
 test:
 	cd libs/jfile/tests; ./test
+	cd libs/skipdb/tests; ./test
